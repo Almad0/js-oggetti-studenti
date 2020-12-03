@@ -16,18 +16,35 @@ var student = {
   surName: "Internicola",
   age: 33
 }
-
-console.log(student);
-
+// console.log(student);
+console.log("Studente: ");
 for (var key in student) {
   console.log(student[key]);
 }
 
+var classe = [
+  { name: "Alessandro",
+    surName: "Internicola",
+    age: 33},
+  { name: "Carmelo",
+    surName: "Prestanome",
+    age: 27},
+  { name: "Oliver",
+    surName: "Hutton",
+    age: 30},
+  { name: "Michelino",
+    surName: "Fortunello",
+    age: 29},
+  { name: "Pinguino",
+    surName: "De Longhi",
+    age: 30}
+]
+// console.log(classe[2]);  -------  mi da l'oggetto "Michelino"
 
-
-
-
-
+console.log("\nLista degli studenti:");
+for (var i = 0; i < classe.length; i++) {
+    console.log("Studente " + (i+1) + ": " + classe[i].name + " " + classe[i].surName);
+}
 
 
 
